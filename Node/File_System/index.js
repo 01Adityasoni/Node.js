@@ -111,7 +111,7 @@ fs.mkdir('AsyncDirectory', (err) => {
         //  return;
     //}
     //else {
-        //  console.log('Directory removed successfully');
+        //  console.log('Directory removed successfully');   
     //}
 //}); // This will remove the directory named AsyncDirectory. The callback function is called when the operation is complete, and it receives an error object (if any). Note that the directory must be empty before it can be removed, otherwise it will throw an error. 
 
