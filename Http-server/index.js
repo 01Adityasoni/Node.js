@@ -3,7 +3,7 @@
 // first we need to import the http module
 const http = require('http');
 
-const fs = require('fs');
+const fs = require('fs'); 
 
 // then we need to create a server
 const server = http.createServer((req, res) => {
