@@ -8,10 +8,11 @@ const {ensureAuthenticated , restrictToRole} = require('../middlewares/auth.midd
 const adminRestrictMiddleware = restrictToRole('ADMIN');
 
 
+router.use(ensureAuthenticated);
+router.use(adminRestrictMiddleware);
 
 
-
-router.get('/users', ensureAuthenticated, adminRestrictMiddleware, async (req,res) => {
+router.get('/users', async (req,res) => {
  
     const users = await db.select({
         id: userTable.id,
